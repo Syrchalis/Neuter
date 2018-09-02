@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Neuter.label>去勢する</Neuter.label>
+  <Neuter.description>動物を去勢して繁殖を防ぎます。</Neuter.description>
+  <Neuter.jobString>去勢中</Neuter.jobString>
+
+  <MakeInfertile.label>不妊にする</MakeInfertile.label>
+  <MakeInfertile.description>動物の生殖を防ぎますが、繁殖交配はできなくなります。</MakeInfertile.description>
+  <MakeInfertile.jobString>不妊手術中</MakeInfertile.jobString>
+
+</LanguageData>
