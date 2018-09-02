@@ -28,10 +28,45 @@
         </fixedIngredientFilter>
         <addsHediff>Neutered</addsHediff>
     </RecipeDef>
+	
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>MakeInfertile</defName>
+        <label>make infertile</label>
+        <description>Prevents an animal from reproducing, but not mating.</description>
+		<workerClass>SyrNeuter.Recipe_Neuter</workerClass>
+        <jobString>Making infertile.</jobString>
+        <workAmount>500</workAmount>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+        <addsHediff>Infertile</addsHediff>
+    </RecipeDef>
     
     <HediffDef>
         <defName>Neutered</defName>
         <label>neutered</label>
+        <isBad>false</isBad>
+        <defaultLabelColor>(18,215,57)</defaultLabelColor>
+    </HediffDef>
+	
+    <HediffDef>
+        <defName>Infertile</defName>
+        <label>infertile</label>
         <isBad>false</isBad>
         <defaultLabelColor>(18,215,57)</defaultLabelColor>
     </HediffDef>

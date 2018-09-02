@@ -9,18 +9,20 @@ using Verse;
 namespace SyrNeuter
 {
     [StaticConstructorOnStartup]
-    public static class AddNeuterRecipe
+    public static class AddNeuterRecipes
     {
-        static AddNeuterRecipe()
+        static AddNeuterRecipes()
         {
             NeuterRecipeUsers();
         }
         public static void NeuterRecipeUsers()
         {
             NeuterDefOf.Neuter.recipeUsers = new List<ThingDef>();
+            NeuterDefOf.MakeInfertile.recipeUsers = new List<ThingDef>();
             foreach (ThingDef item in DefDatabase<ThingDef>.AllDefs.Where((ThingDef d) => d.category == ThingCategory.Pawn && d.race.IsFlesh && !d.race.Humanlike))
             {
                 NeuterDefOf.Neuter.recipeUsers.Add(item);
+                NeuterDefOf.MakeInfertile.recipeUsers.Add(item);
             }
         }
     }

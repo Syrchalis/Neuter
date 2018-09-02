@@ -52,6 +52,8 @@
     <Compile Include="AddNeuterRecipe.cs" />
     <Compile Include="DefOf.cs" />
     <Compile Include="FertileMateTargetPatch.cs" />
+    <Compile Include="HarmonyPatches.cs" />
+    <Compile Include="MatedPatch.cs" />
     <Compile Include="Recipe_Neuter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
