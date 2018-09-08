@@ -11,21 +11,6 @@
 		<targetsBodyPart>false</targetsBodyPart>
 		<anesthetize>false</anesthetize>
 		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
-        <ingredients>
-            <li>
-                <filter>
-                    <categories>
-                        <li>Medicine</li>
-                    </categories>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <categories>
-                <li>Medicine</li>
-            </categories>
-        </fixedIngredientFilter>
         <addsHediff>Neutered</addsHediff>
     </RecipeDef>
 	
@@ -56,19 +41,47 @@
         </fixedIngredientFilter>
         <addsHediff>Infertile</addsHediff>
     </RecipeDef>
+	
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>ReverseInfertility</defName>
+        <label>reverse infertility</label>
+        <description>Makes an animal able to reproduce again.</description>
+		<workerClass>SyrNeuter.Recipe_Neuter</workerClass>
+        <jobString>Reversing infertility.</jobString>
+        <workAmount>500</workAmount>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+        <removesHediff>Infertile</removesHediff>
+    </RecipeDef>
     
     <HediffDef>
         <defName>Neutered</defName>
         <label>neutered</label>
         <isBad>false</isBad>
-        <defaultLabelColor>(18,215,57)</defaultLabelColor>
+        <defaultLabelColor>(255,255,255)</defaultLabelColor>
     </HediffDef>
 	
     <HediffDef>
         <defName>Infertile</defName>
         <label>infertile</label>
         <isBad>false</isBad>
-        <defaultLabelColor>(18,215,57)</defaultLabelColor>
+        <defaultLabelColor>(255,255,255)</defaultLabelColor>
     </HediffDef>
 
 </Defs>

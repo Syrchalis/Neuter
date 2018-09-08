@@ -17,6 +17,7 @@ namespace SyrNeuter
         }
         public static RecipeDef Neuter;
         public static RecipeDef MakeInfertile;
+        public static RecipeDef ReverseInfertility;
         public static HediffDef Neutered;
         public static HediffDef Infertile;
     }

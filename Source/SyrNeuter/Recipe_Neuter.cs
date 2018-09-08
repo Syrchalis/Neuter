@@ -21,7 +21,14 @@ namespace SyrNeuter
 
         public override void ApplyOnPawn(Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients, Bill bill)
         {
-            pawn.health.AddHediff(recipe.addsHediff);
+            if (recipe.addsHediff != null)
+            {
+                pawn.health.AddHediff(recipe.addsHediff);
+            }
+            if (recipe.removesHediff != null)
+            {
+                pawn.health.RemoveHediff(pawn.health.hediffSet.GetFirstHediffOfDef(recipe.removesHediff));
+            }
         }
     }
 }
