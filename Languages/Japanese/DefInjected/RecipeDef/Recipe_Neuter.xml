@@ -9,4 +9,9 @@
   <MakeInfertile.description>動物の生殖を防ぎますが、繁殖交配はできなくなります。</MakeInfertile.description>
   <MakeInfertile.jobString>不妊手術中</MakeInfertile.jobString>
 
+  <ReverseInfertility.label>不妊を除去する</ReverseInfertility.label>
+  <ReverseInfertility.description>動物を再び繁殖可能にすることができます。</ReverseInfertility.description>
+  <ReverseInfertility.jobString>不妊除去中</ReverseInfertility.jobString>
+
+
 </LanguageData>
