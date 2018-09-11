@@ -7,6 +7,7 @@ using UnityEngine;
 using RimWorld;
 using Verse;
 using Verse.AI;
+using System.IO;
 
 namespace SyrNeuter
 {
@@ -20,6 +21,14 @@ namespace SyrNeuter
             {
                 __result = false;
             }
+            if (WildAnimalSexActive)
+            {
+                if (male.health.hediffSet.HasHediff(NeuterDefOf.Infertile) || female.health.hediffSet.HasHediff(NeuterDefOf.Infertile))
+                {
+                    __result = false;
+                }
+            }
         }
+        public static bool WildAnimalSexActive => ModsConfig.ActiveModsInLoadOrder.Any(m => m.Name.Contains("Wild Animal Sex"));
     }
 }
