@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,7 @@ namespace SyrNeuter
     {
         static HarmonyPatches()
         {
-            var harmony = HarmonyInstance.Create("Syrchalis.Rimworld.Neuter");
+            var harmony = new Harmony("Syrchalis.Rimworld.Neuter");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }

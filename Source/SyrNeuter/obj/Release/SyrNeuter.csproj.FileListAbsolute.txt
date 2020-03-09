@@ -5,5 +5,5 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Neuter\Source\Sy
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Assemblies\SyrNeuter.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Neuter\Source\SyrNeuter\obj\Release\SyrNeuter.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Neuter\Source\SyrNeuter\obj\Release\SyrNeuter.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Neuter\Source\SyrNeuter\obj\Release\SyrNeuter.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Neuter\Source\SyrNeuter\obj\Release\SyrNeuter.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_Neuter\1.1\Assemblies\SyrNeuter.dll

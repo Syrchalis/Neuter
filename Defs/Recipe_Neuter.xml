@@ -73,6 +73,7 @@
     <HediffDef>
         <defName>Neutered</defName>
         <label>neutered</label>
+        <description>Prevents an animal from mating.</description>
         <isBad>false</isBad>
         <defaultLabelColor>(255,255,255)</defaultLabelColor>
     </HediffDef>
@@ -80,6 +81,7 @@
     <HediffDef>
         <defName>Infertile</defName>
         <label>infertile</label>
+        <description>Prevents an animal from reproducing, but not mating.</description>
         <isBad>false</isBad>
         <defaultLabelColor>(255,255,255)</defaultLabelColor>
     </HediffDef>
