@@ -2,6 +2,9 @@
 <LanguageData>
 
   <Neutered.label>去勢済</Neutered.label>
+  <Neutered.description>動物の交尾を防ぎます。</Neutered.description>
+
   <Infertile.label>不妊</Infertile.label>
+  <Infertile.description>動物の妊娠を防ぎ交尾もしません。</Infertile.description>
 
 </LanguageData>
