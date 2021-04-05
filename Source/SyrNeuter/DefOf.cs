@@ -16,6 +16,7 @@ namespace SyrNeuter
             DefOfHelper.EnsureInitializedInCtor(typeof(RecipeDefOf));
         }
         public static RecipeDef Neuter;
+        public static RecipeDef AbortPregnancy;
         public static RecipeDef MakeInfertile;
         public static RecipeDef ReverseInfertility;
         public static HediffDef Neutered;
