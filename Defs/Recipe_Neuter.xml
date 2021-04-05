@@ -1,89 +1,103 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     
-    <RecipeDef ParentName="SurgeryFlesh">
-        <defName>Neuter</defName>
-        <label>neuter</label>
-        <description>Prevents an animal from breeding.</description>
-		<workerClass>SyrNeuter.Recipe_Neuter</workerClass>
-        <jobString>Neutering.</jobString>
-        <workAmount>500</workAmount>
-		<targetsBodyPart>false</targetsBodyPart>
-		<anesthetize>false</anesthetize>
-		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
-        <addsHediff>Neutered</addsHediff>
-    </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>Neuter</defName>
+    <label>neuter</label>
+    <description>Prevents an animal from breeding.</description>
+    <workerClass>SyrNeuter.Recipe_Neuter</workerClass>
+    <jobString>Neutering.</jobString>
+    <workAmount>500</workAmount>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <addsHediff>Neutered</addsHediff>
+		<removesHediff>Infertile</removesHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>AbortPregnancy</defName>
+    <label>abort pregnancy</label>
+    <description>Aborts an ongoing pregnancy.</description>
+    <workerClass>SyrNeuter.Recipe_AbortPregnancy</workerClass>
+    <jobString>Aborting pregnancy.</jobString>
+    <workAmount>500</workAmount>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<removesHediff>Pregnant</removesHediff>
+  </RecipeDef>
 	
-    <RecipeDef ParentName="SurgeryFlesh">
-        <defName>MakeInfertile</defName>
-        <label>make infertile</label>
-        <description>Prevents an animal from reproducing, but not mating.</description>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>MakeInfertile</defName>
+    <label>make infertile</label>
+    <description>Prevents an animal from reproducing, but not mating.</description>
 		<workerClass>SyrNeuter.Recipe_Neuter</workerClass>
-        <jobString>Making infertile.</jobString>
-        <workAmount>500</workAmount>
+    <jobString>Making infertile.</jobString>
+    <workAmount>500</workAmount>
 		<targetsBodyPart>false</targetsBodyPart>
 		<anesthetize>false</anesthetize>
 		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
-        <ingredients>
-            <li>
-                <filter>
-                    <categories>
-                        <li>Medicine</li>
-                    </categories>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <categories>
-                <li>Medicine</li>
-            </categories>
-        </fixedIngredientFilter>
-        <addsHediff>Infertile</addsHediff>
-    </RecipeDef>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <addsHediff>Infertile</addsHediff>
+  </RecipeDef>
 	
-    <RecipeDef ParentName="SurgeryFlesh">
-        <defName>ReverseInfertility</defName>
-        <label>reverse infertility</label>
-        <description>Makes an animal able to reproduce again.</description>
-		<workerClass>SyrNeuter.Recipe_Neuter</workerClass>
-        <jobString>Reversing infertility.</jobString>
-        <workAmount>500</workAmount>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>ReverseInfertility</defName>
+    <label>reverse infertility</label>
+    <description>Makes an animal able to reproduce again.</description>
+		<workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Reversing infertility.</jobString>
+    <workAmount>500</workAmount>
 		<targetsBodyPart>false</targetsBodyPart>
 		<anesthetize>false</anesthetize>
 		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
-        <ingredients>
-            <li>
-                <filter>
-                    <categories>
-                        <li>Medicine</li>
-                    </categories>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
+      <ingredients>
+        <li>
+          <filter>
             <categories>
-                <li>Medicine</li>
+              <li>Medicine</li>
             </categories>
-        </fixedIngredientFilter>
-        <removesHediff>Infertile</removesHediff>
-    </RecipeDef>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+          <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+		<removesHediff>Infertile</removesHediff>
+  </RecipeDef>
     
-    <HediffDef>
-        <defName>Neutered</defName>
-        <label>neutered</label>
-        <description>Prevents an animal from mating.</description>
-        <isBad>false</isBad>
-        <defaultLabelColor>(255,255,255)</defaultLabelColor>
-    </HediffDef>
-	
-    <HediffDef>
-        <defName>Infertile</defName>
-        <label>infertile</label>
-        <description>Prevents an animal from reproducing, but not mating.</description>
-        <isBad>false</isBad>
-        <defaultLabelColor>(255,255,255)</defaultLabelColor>
-    </HediffDef>
+  <HediffDef>
+    <defName>Neutered</defName>
+    <label>neutered</label>
+    <description>Prevents an animal from mating.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(255,255,255)</defaultLabelColor>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Infertile</defName>
+    <label>infertile</label>
+    <description>Prevents an animal from reproducing, but not mating.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(255,255,255)</defaultLabelColor>
+  </HediffDef>
 
 </Defs>
