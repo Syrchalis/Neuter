@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Neutered.label>阉割</Neutered.label>
+  <Neutered.description>防止动物交配</Neutered.description>
+
+  <Infertile.label>不孕症</Infertile.label>
+  <Infertile.description>防止动物怀孕，不进行交配。</Infertile.description>
+
+</LanguageData>
