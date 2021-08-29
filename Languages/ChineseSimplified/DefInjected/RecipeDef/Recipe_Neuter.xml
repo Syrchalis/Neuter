@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Neuter.label>阉割</Neuter.label>
+  <Neuter.description>阉割一只动物以防止其繁殖</Neuter.description>
+  <Neuter.jobString>阉割中</Neuter.jobString>
+
+  <AbortPregnancy.label>堕胎</AbortPregnancy.label>
+  <AbortPregnancy.description>我正在中止我目前的怀孕</AbortPregnancy.description>
+  <AbortPregnancy.jobString>堕胎手术中</AbortPregnancy.jobString>
+
+  <MakeInfertile.label>绝育</MakeInfertile.label>
+  <MakeInfertile.description>防止动物繁殖，但阻止其繁殖交配。</MakeInfertile.description>
+  <MakeInfertile.jobString>绝育手术中</MakeInfertile.jobString>
+
+  <ReverseInfertility.label>移除不孕症</ReverseInfertility.label>
+  <ReverseInfertility.description>允许动物再次成为可育者。</ReverseInfertility.description>
+  <ReverseInfertility.jobString>不孕症被移除</ReverseInfertility.jobString>
+
+</LanguageData>
