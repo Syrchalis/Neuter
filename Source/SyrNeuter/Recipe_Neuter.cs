@@ -10,7 +10,7 @@ namespace SyrNeuter
 {
     internal class Recipe_Neuter : RecipeWorker
     {
-        public override bool AvailableOnNow(Thing thing)
+        public override bool AvailableOnNow(Thing thing, BodyPartRecord part = null)
         {
             if (thing is Pawn pawn && !pawn.health.hediffSet.HasHediff(recipe.addsHediff))
             {
@@ -46,7 +46,7 @@ namespace SyrNeuter
 
     internal class Recipe_AbortPregnancy : RecipeWorker
     {
-        public override bool AvailableOnNow(Thing thing)
+        public override bool AvailableOnNow(Thing thing, BodyPartRecord part = null)
         {
             if (thing is Pawn pawn && pawn.health.hediffSet.HasHediff(recipe.removesHediff))
             {
